@@ -6,6 +6,7 @@ A command-line Rock Paper Scissors game built using Python. The player competes 
 
 - User vs Computer gameplay
 - Random computer choices using Python's `random` module
+- Time delays using `time` module for better game experience
 - Score tracking for both player and computer
 - First-to-3-points winning system
 - Draw detection
