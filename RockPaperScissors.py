@@ -1,8 +1,10 @@
 import random
+import time
 print("**WELCOME TO 'ROCK-PAPER-SCISSORS' GAME**")
 print("*YOU VS COMPUTER* - The One To Reach 3 Points First Wins!")
 print("Rock - 'R'\nPaper - 'P'\nScissors - 'S'")
 print()
+time.sleep(2)
 player = 0
 comp = 0
 def show_points():
@@ -10,21 +12,26 @@ def show_points():
     print("Computer =",comp,"Points")
 while(player!=3 and comp!=3):
     rand = random.choice(["Rock","Paper","Scissors"])
-    val = input("Enter Your Pick.. (R/P/S) : ")
+    print("Rock...")
+    time.sleep(0.8)
+    print("Paper...")
+    time.sleep(0.8)
+    print("Scissors..")
+    val = input("Waiting For Your Pick.. (R/P/S) : ")
     print()
     if(val == "R"):
-        str = "Rock"
+        player_ch = "Rock"
     elif(val == "P"):
-        str = "Paper"
+        player_ch = "Paper"
     elif(val == "S"):
-        str = "Scissors"
+        player_ch = "Scissors"
     else:
         print("**Error Occured**")
         break
-    print("<",str,"VS",rand,">")
-    if(str==rand):
+    print("<",player_ch,"VS",rand,">")
+    if(player_ch==rand):
         print("*****DRAW*****")
-    elif((str == "Rock" and rand == "Scissors") or (str == "Paper" and rand == "Rock") or (str == "Scissors" and rand == "Paper")):
+    elif((player_ch == "Rock" and rand == "Scissors") or (player_ch == "Paper" and rand == "Rock") or (player_ch == "Scissors" and rand == "Paper")):
         print("*YOU EARNED A POINT*")
         player+=1
     else:
