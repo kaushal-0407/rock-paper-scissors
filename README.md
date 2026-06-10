@@ -30,8 +30,12 @@ The game continues until either the player or the computer reaches 3 points.
    ```bash
    git clone <repository-url>
 2. Open the project folder:
+
+   ```bash
    cd rock-paper-scissors
 3. Run the program:
+
+   ```bash
    python main.py
 
 Author - Kaushal Kumar Gupta
