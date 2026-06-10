@@ -39,6 +39,7 @@ while(player!=3 and comp!=3):
         comp+=1
     show_points()
     print()
+    time.sleep(0.5)
 if(player == 3):
     print("**YOU WON! CONGRATS**")
 elif(comp == 3):
